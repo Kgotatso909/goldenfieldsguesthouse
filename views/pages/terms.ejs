@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_header.ejs') %>
+    <title>Terms & Conditions | Eagles Views Kungwini</title>
+    <meta
+      name="description"
+      content="Read our terms and conditions to understand the rules and guidelines for booking and staying at Eagles Views Kungwini."
+    />
+    <meta
+      name="keywords"
+      content="Terms and Conditions, Eagles Views Kungwini, Booking Rules, Stay Guidelines"
+    />
+    <meta name="robots" content="index, follow" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include('../partials/_navbar.ejs') %>
+        <div
+          class="container-fluid page-header mb-5 p-0"
+          style="background-image: url(assets/images/bedroom-2.png)"
+        >
+          <div class="page-dim-bg"></div>
+          <div class="header_content text-white">
+            <h1>Terms & Conditions</h1>
+            <p>
+              Please review our terms and conditions before booking your stay
+              with us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section privacy-section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title text-primary">
+          Terms & Conditions Overview
+        </h2>
+        <p>
+          By booking a reservation with Eagles Views Kungwini, you agree to our
+          terms and conditions as outlined below. Please read them carefully
+          before completing your booking.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Booking Requirements -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-bookmark"></i> Booking Requirements
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Guests are required to provide valid identification and a valid
+                credit card to complete the booking process. Reservations are
+                confirmed only after a deposit is paid.
+              </div>
+            </div>
+          </div>
+
+          <!-- Cancellation Policy -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-calendar-times"></i> Cancellation Policy
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Reservations may be cancelled up to 48 hours before the check-in
+                date for a full refund. Any cancellations made after this period
+                may be subject to a cancellation fee.
+              </div>
+            </div>
+          </div>
+
+          <!-- Liability -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-exclamation-triangle"></i> Liability
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                We are not responsible for any accidents, injuries, or losses
+                that occur during your stay. Guests are expected to follow
+                safety guidelines and respect the property.
+              </div>
+            </div>
+          </div>
+
+          <!-- Changes to Terms -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-refresh"></i> Changes to Terms
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Eagles Views Kungwini reserves the right to modify these terms
+                at any time. Any changes will be communicated to guests before
+                their stay.
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-phone"></i> Contact Us
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                If you have any questions or need further clarification
+                regarding our terms and conditions, please contact us at
+                <strong>info@eaglesviewkungwini.com</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('../partials/_footer.ejs') %>
+  </body>
+</html>

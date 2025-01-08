@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Book your stay at Eagles View Kungwini. Choose from luxury rooms, select your dates, and make your special requests online."
+    />
+    <meta
+      name="keywords"
+      content="Eagles View Kungwini, room booking, luxury lodge, Bronkhorstspruit, check-in, check-out, accommodations"
+    />
+    <meta property="og:title" content="Booking | Eagles View Kungwini" />
+    <meta
+      property="og:description"
+      content="Easily book a room at Eagles View Kungwini. Select your check-in and check-out dates, choose your room, and submit your booking request."
+    />
+    <meta property="og:image" content="URL to booking-related image" />
+    <%- include('../partials/_header.ejs') %>
+    <title>Booking | Eagles View Kungwini</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/flatpickr.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/flactpickr.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/booking.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingReservation",
+        "name": "Room Booking | Eagles View Kungwini",
+        "description": "Reserve your stay at Eagles View Kungwini by selecting your check-in and check-out dates, room type, and number of guests.",
+        "url": "https://yourwebsite.com/booking",
+        "reservationStatus": "http://schema.org/Confirmed",
+        "provider": {
+          "@type": "LodgingBusiness",
+          "name": "Eagles View Kungwini",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+            "addressLocality": "Bronkhorstspruit",
+            "addressRegion": "Gauteng",
+            "postalCode": "1020",
+            "addressCountry": "ZA"
+          },
+          "telephone": "+27 834113931",
+          "email": "info@eaglesview.co.za"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include('../partials/_navbar.ejs') %>
+        <div
+          class="container-fluid page-header mb-5 p-0"
+          style="background-image: url(assets/images/bedroom-1.png)"
+        >
+          <div class="page-dim-bg"></div>
+          <div class="header_content text-white">
+            <h1>Book your stay</h1>
+            <p>Your next escape starts here.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Booking section starts here -->
+    <section class="booking-section section">
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="
+              visibility: visible;
+              animation-delay: 0.1s;
+              animation-name: fadeInUp;
+            "
+          >
+            <h2 class="section-title text-center text-primary text-uppercase">
+              Room Booking
+            </h2>
+            <h3 class="mb-5">
+              Book A
+              <span class="text-primary text-uppercase">Luxury Room</span>
+            </h3>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.1s"
+                    src="assets/images/hero-sm-screen-1.webp"
+                    style="
+                      margin-top: 25%;
+                      visibility: visible;
+                      animation-delay: 0.1s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    src="assets/images/bedroom-1.webp"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.3s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-50 wow zoomIn"
+                    data-wow-delay="0.5s"
+                    src="assets/images/outdoor-view.webp"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.5s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.7s"
+                    src="assets/images/hero-lg-screen.webp"
+                    style="
+                      visibility: visible;
+                      animation-delay: 0.7s;
+                      animation-name: zoomIn;
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="wow fadeInUp"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInUp;
+                "
+              >
+                <form
+                  id="bookingForm"
+                  action="/bookings/submit-booking"
+                  method="POST"
+                  novalidate
+                >
+                  <div class="row g-3">
+                    <!-- Name -->
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Your Name"
+                          aria-label="Enter your name"
+                          required
+                        />
+                        <label for="name">Your Name</label>
+                        <div class="invalid-feedback">
+                          Please enter your name.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Your Email"
+                          aria-label="Enter your email address"
+                          required
+                        />
+                        <label for="email">Your Email</label>
+                        <div class="invalid-feedback">
+                          Please enter a valid email address.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Check-in Date -->
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        id="checkin"
+                        name="checkin"
+                        class="form-control"
+                        placeholder="Select Check-in Date"
+                        aria-label="Select Check-in Date"
+                        required
+                      />
+                      <label for="checkin">Check-in Date</label>
+                    </div>
+
+                    <!-- Check-out Date -->
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        id="checkout"
+                        name="checkout"
+                        class="form-control"
+                        placeholder="Select Check-out Date"
+                        aria-label="Select Check-out Date"
+                        required
+                      />
+                      <label for="checkout">Check-out Date</label>
+                      <div class="invalid-feedback" id="checkoutError">
+                        Enter a valid Check-in date and check-in date.
+                      </div>
+                    </div>
+
+                    <!-- Select Adults -->
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select
+                          class="form-select"
+                          id="select1"
+                          name="adult"
+                          required
+                        >
+                          <option value="1">Adult 1</option>
+                          <option value="2">Adult 2</option>
+                          <option value="3">Adult 3</option>
+                        </select>
+                        <label for="select1">Select Adult</label>
+                        <div class="invalid-feedback">
+                          Please select the number of adults.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Select Children -->
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <select
+                          class="form-select"
+                          id="select2"
+                          name="child"
+                          required
+                        >
+                          <option value="0">Child 0</option>
+                          <option value="1">Child 1</option>
+                          <option value="2">Child 2</option>
+                        </select>
+                        <label for="select2">Select Child</label>
+                        <div class="invalid-feedback">
+                          Please select the number of children.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Room Selection -->
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <select
+                          class="form-select"
+                          id="select3"
+                          name="room"
+                          required
+                        >
+                          <option value="1">Room 1</option>
+                          <option value="2">Room 2</option>
+                          <option value="3">Room 3</option>
+                          <option value="4">Room 4</option>
+                          <option value="5">Room 5</option>
+                          <option value="6">Room 6</option>
+                          <option value="7">Room 7</option>
+                        </select>
+                        <label for="select3">Select A Room</label>
+                        <div class="invalid-feedback">
+                          Please select a room.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="Special Request"
+                          aria-label="Special Request"
+                          id="message"
+                          name="message"
+                          style="height: 100px"
+                          value="none"
+                        ></textarea>
+                        <label for="message">Special Request</label>
+                      </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100 py-3" type="submit">
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="submissionToast"
+        class="toast position-fixed bottom-0 end-0 p-3"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        style="display: none"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Booking Confirmation</strong>
+          <small class="text-muted">Just now</small>
+          <button
+            type="button"
+            class="btn-close"
+            onclick="hideToast()"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Thank you for booking with us! We’ll get back to you soon with your
+          reservation details.
+        </div>
+      </div>
+    </section>
+    <!-- Booking section ends here -->
+    <%- include('../partials/_footer.ejs') %>
+  </body>
+</html>

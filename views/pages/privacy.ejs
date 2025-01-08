@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/_header.ejs') %>
+    <title>Privacy Policy | Eagles Views Kungwini</title>
+    <meta
+      name="description"
+      content="Read our privacy policy to understand how we collect, use, and protect your personal information while you enjoy Eagles Views Kungwini's luxurious accommodations."
+    />
+    <meta
+      name="keywords"
+      content="Privacy Policy, Eagles Views Kungwini, Personal Information, Data Protection, Privacy Statement"
+    />
+    <meta name="robots" content="index, follow" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include('../partials/_navbar.ejs') %>
+        <div
+          class="container-fluid page-header mb-5 p-0"
+          style="background-image: url(assets/images/bedroom-2.png)"
+        >
+          <div class="page-dim-bg"></div>
+          <div class="header_content text-white">
+            <h1>Privacy Policy</h1>
+            <p>
+              We value your privacy and are committed to protecting your
+              personal information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section privacy-section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title text-primary">Privacy Policy Overview</h2>
+        <p>
+          At Eagles Views Kungwini, we prioritize the protection of your
+          personal data. This Privacy Policy explains how we collect, store,
+          use, and protect the personal information you provide when you use our
+          website or book accommodations with us. By using our services, you
+          consent to the practices described in this policy.
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Information We Collect -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-user"></i> Information We Collect
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                We may collect personal information such as your name, email
+                address, contact details, and payment information when you make
+                a booking or use our website services.
+              </div>
+            </div>
+          </div>
+
+          <!-- How We Use Your Information -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-cogs"></i> How We Use Your Information
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                Your information is used to process bookings, provide customer
+                support, and send you important information regarding your
+                reservations. We will never sell your data to third parties.
+              </div>
+            </div>
+          </div>
+
+          <!-- How We Protect Your Information -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-lock"></i> How We Protect Your Information
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                We employ a variety of security measures to ensure your data is
+                protected, including encryption and secure server hosting.
+              </div>
+            </div>
+          </div>
+
+          <!-- Your Rights -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-check-circle"></i> Your Rights
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                You have the right to access, modify, or delete your personal
+                information at any time. Please contact us for further
+                assistance.
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col">
+            <div class="facility-box">
+              <div class="facility-header" onclick="toggleDescription(this)">
+                <i class="fa fa-phone"></i> Contact Us
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="facility-description">
+                If you have any questions or concerns about this Privacy Policy,
+                please feel free to contact us at
+                <strong>info@eaglesviewkungwini.com</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('../partials/_footer.ejs') %>
+  </body>
+</html>

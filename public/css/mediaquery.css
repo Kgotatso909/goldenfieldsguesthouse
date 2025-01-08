@@ -1,0 +1,92 @@
+/* Home page about section break point for small screens */
+@media (max-width: 776px) {
+  .about-inner-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .large-screen-content {
+    display: none;
+  }
+}
+
+@media (max-width: 585px) {
+  .facility-section {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-section .row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/*
+ * Media query for about section
+ */
+@media (max-width: 845px) {
+  .contact-form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 525px) {
+  .name-email-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* About us page */
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .about-inner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image-container {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease;
+    color: #352d2d !important;
+    box-shadow: none !important;
+  }
+
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+
+  .navbar.scrolled {
+    background-color: #fff !important;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .navbar-brand {
+    color: #fff !important;
+  }
+
+  .navbar.scrolled .navbar-brand img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .navbar.scrolled .nav-link {
+    color: #000 !important;
+  }
+}

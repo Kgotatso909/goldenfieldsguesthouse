@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Get in touch with Neatbat Guestouse. Contact us for queries, bookings, or more information about our services and facilities."
+    />
+    <meta
+      name="keywords"
+      content="Neatbat Guestouse, contact, location, email, phone, query, Bronkhorstspruit"
+    />
+    <meta property="og:title" content="Contact | Neatbat Guestouse" />
+    <meta
+      property="og:description"
+      content="Contact Neatbat Guestouse for inquiries, bookings, and details about our lodge. We're here to assist you!"
+    />
+    <meta property="og:image" content="URL to contact-related image" />
+    <meta property="og:url" content="URL to the contact page" />
+    <meta name="robots" content="index, follow" />
+    <%- include('../partials/_header.ejs') %>
+    <title>Contact | Neatbat Guestouse</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Neatbat Guestouse",
+        "description": "Luxury lodge in Bronkhorstspruit offering accommodations, facilities, and more. Contact us for queries and bookings.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+          "addressLocality": "Bronkhorstspruit",
+          "addressRegion": "Gauteng",
+          "postalCode": "1020",
+          "addressCountry": "ZA"
+        },
+        "email": "info@neatbat.co.za",
+        "telephone": "+27 834113931",
+        "url": "https://yourwebsite.com/contact",
+        "sameAs": [
+          "https://www.facebook.com/neatbat",
+          "https://www.instagram.com/neatbat",
+          "https://www.twitter.com/neatbat"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include('../partials/_navbar.ejs') %>
+        <div
+          class="container-fluid page-header mb-5 p-0"
+          style="background-image: url(assets/images/bedroom-2.png)"
+        >
+          <div class="page-dim-bg"></div>
+          <div class="header_content text-white">
+            <h1>Get in Touch</h1>
+            <p>we're here to assit you anytime.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Contact form start here -->
+    <section class="section contact-form-section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title text-primary">Gallery</h2>
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <form
+              id="contactForm"
+              class="form-container p-4 shadow-sm rounded"
+              action="/contact/send-email"
+              method="POST"
+              novalidate
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                  autocomplete="true"
+                />
+                <label for="name">Your Name</label>
+                <div class="invalid-feedback" id="nameError">
+                  Please enter your name.
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+                <label for="email">Your Email</label>
+                <div class="invalid-feedback" id="emailError">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+                <label for="subject">Subject</label>
+                <div class="invalid-feedback" id="subjectError">
+                  Please enter a subject.
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Your Message"
+                  style="height: 150px"
+                  required
+                ></textarea>
+                <label for="message">Your Message</label>
+                <div class="invalid-feedback" id="messageError">
+                  Please enter your message.
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Map -->
+          <div class="col-lg-6">
+            <div class="map-container p-4 shadow-sm rounded">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.022040857968!2d28.70179457540462!3d-25.889094277272093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeab55cd7ae60cd%3A0xf98b91ac4fb5e18!2seagles%20view%20kungwini!5e1!3m2!1sen!2sza!4v1734187804707!5m2!1sen!2sza"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- Toast Notification -->
+
+        <div
+          id="submissionToast"
+          class="toast position-fixed bottom-0 end-0 p-3"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <strong class="me-auto">Message Sent</strong>
+            <button
+              type="button"
+              class="btn-close"
+              onclick="hideToast()"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Thank you for contacting us! We’ll respond to your query soon.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form ends here -->
+    <%- include('../partials/_footer.ejs') %>
+  </body>
+</html>

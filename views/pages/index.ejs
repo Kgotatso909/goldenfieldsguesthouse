@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/_header.ejs") %>
+    <meta
+      name="description"
+      content="Book your stay at Eagles view Kungwini for a peaceful getaway. Enjoy comfortable rooms, an on-site bar, and easy access to the town center."
+    />
+    <title>
+      Eagles view Kungwini | Exclusive Guest Lodge in Kungwini, Bronkhorstspruit
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/wow.min.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <style>
+      /* Hero section starts here */
+      .header_area .main-menu .navbar {
+        position: fixed;
+        min-width: 100%;
+        background: #afeeee;
+        z-index: 10000;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      .btn-primary,
+      .btn-secondary {
+        padding: 10px 20px;
+        border-radius: 8px;
+        color: #fff;
+        border: none;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--bg-secondary-dark);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--bg-primary-dark);
+      }
+
+      @media (max-width: 991px) {
+        .navbar-brand img {
+          height: 70px !important;
+          width: 70px !important;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .navbar {
+          background-color: transparent !important;
+          transition: background-color 0.3s ease;
+          color: #352d2d !important;
+          box-shadow: none !important;
+        }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+
+        .navbar.scrolled {
+          background-color: #afeeee !important;
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .navbar-brand {
+          color: #fff !important;
+        }
+
+        .navbar.scrolled .navbar-brand img {
+          height: 90px !important;
+          width: 90px !important;
+        }
+
+        .navbar.scrolled .nav-link {
+          color: #000 !important;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Eagles view Kungwini",
+        "image": "https://example.com/assets/images/hero-lg-screen.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+          "addressLocality": "Bronkhorstspruit",
+          "addressRegion": "Gauteng",
+          "postalCode": "1020",
+          "addressCountry": "ZA"
+        },
+        "priceRange": "R1200",
+        "telephone": "+27 834113931",
+        "email": "info@Eaglesview.co.za",
+        "url": "https://example.com",
+        "amenities": [
+          "Free Wifi",
+          "Free Parking",
+          "Outdoor Pool",
+          "Child-Friendly",
+          "Bar",
+          "Restaurant"
+        ],
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -25.8890895,
+          "longitude": 28.7017946
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": "Gerrit Malan",
+            "datePublished": "2024-12-01",
+            "description": "Since our arrival late Friday afternoon until our departure on Sunday morning, we were met with utmost sincerity.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": "Willie Scholtz",
+            "datePublished": "2024-12-01",
+            "description": "It was a 40th birthday celebration, and the venue was perfect for the occasion.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include("../partials/_navbar.ejs") %>
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+          <div
+            id="header-carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="w-100"
+                  src="assets/images/bedroom-1.png"
+                  alt="hero images: bedroom picture"
+                  height="700px"
+                />
+                <div
+                  class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div class="p-3" style="max-width: 700px">
+                    <h6
+                      class="section-title text-white text-uppercase mb-3 animated slideInDown"
+                    >
+                      Tranquil stays
+                    </h6>
+                    <h1 class="display-3 text-white mb-4 animated slideInDown">
+                      Find comfort and peace at Eaglesview
+                    </h1>
+                    <a
+                      href="#rooms"
+                      class="btn btn-secondary py-md-3 px-md-5 me-3 animated slideInLeft"
+                      >Our Rooms</a
+                    >
+                    <a
+                      href="/bookings"
+                      class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                      >Book A Room</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="w-100"
+                  src="assets/images/fishing.png"
+                  alt="hero picture: outdoor picture"
+                  height="700px"
+                  width="100%"
+                />
+                <div
+                  class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div class="p-3" style="max-width: 700px">
+                    <h6
+                      class="section-title text-white text-uppercase mb-3 animated slideInDown"
+                    >
+                      relaxation awaits
+                    </h6>
+                    <h1 class="display-3 text-white mb-4 animated slideInDown">
+                      Unwind in style at Eaglesview
+                    </h1>
+                    <a
+                      href="#rooms"
+                      class="btn btn-secondary py-md-3 px-md-5 me-3 animated slideInLeft"
+                      >Our Rooms</a
+                    >
+                    <a
+                      href="/bookings"
+                      class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                      >Book A Room</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#header-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Carousel End -->
+      </div>
+    </header>
+
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="min-height: 400px"
+          >
+            <div class="position-relative h-100">
+              <img
+                class="img-fluid position-absolute w-100 h-100"
+                src="assets/images/hero-lg-screen.png"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <h1 class="mb-4 bounceInRight">
+              Welcome to <br /><span class="text-white"
+                >Eagles view Kungwini</span
+              >
+            </h1>
+            <p class="mb-4">
+              Experience the serenity and comfort of a home away from home in
+              the heart of Bronkhorstspruit.
+            </p>
+            <p class="mb-4">
+              Our modern accommodations and beautiful garden provide the perfect
+              backdrop for relaxation.
+            </p>
+            <div class="row gy-2 gx-4 mb-4">
+              <div class="col-sm-6">
+                <div class="facility-box">
+                  <div
+                    class="facility-header"
+                    onclick="toggleDescription(this)"
+                  >
+                    <i class="fa fa-wifi"></i> Free Wifi
+                    <span class="arrow">&#x25BC;</span>
+                  </div>
+                  <div class="facility-description">
+                    Stay connected with complimentary high-speed internet during
+                    your stay.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="facility-box">
+                  <div
+                    class="facility-header"
+                    onclick="toggleDescription(this)"
+                  >
+                    <i class="fa fa-car"></i> Free Parking
+                    <span class="arrow">&#x25BC;</span>
+                  </div>
+                  <div class="facility-description">
+                    Secure and convenient parking available at no extra charge.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="facility-box">
+                  <div
+                    class="facility-header"
+                    onclick="toggleDescription(this)"
+                  >
+                    <i class="fa fa-swimming-pool"></i> Outdoor Pool
+                    <span class="arrow">&#x25BC;</span>
+                  </div>
+                  <div class="facility-description">
+                    Take a refreshing dip in our well-maintained outdoor pool,
+                    perfect for relaxation and leisure.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="facility-box">
+                  <div
+                    class="facility-header"
+                    onclick="toggleDescription(this)"
+                  >
+                    <i class="fa fa-coffee"></i> Tea and Coffee
+                    <span class="arrow">&#x25BC;</span>
+                  </div>
+                  <div class="facility-description">
+                    Enjoy complimentary tea and coffee throughout your stay,
+                    available in your room and shared spaces.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="facility-box">
+                  <div
+                    class="facility-header"
+                    onclick="toggleDescription(this)"
+                  >
+                    <i class="fa fa-hamburger"></i> Breakfast available
+                    <span class="arrow">&#x25BC;</span>
+                  </div>
+                  <div class="facility-description">
+                    Enjoy complimentary tea and coffee throughout your stay,
+                    available in your room and shared spaces.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="facility-box">
+                  <div
+                    class="facility-header"
+                    onclick="toggleDescription(this)"
+                  >
+                    <i class="fa fa-biking"></i> Activities
+                    <span class="arrow">&#x25BC;</span>
+                  </div>
+                  <div class="facility-description">
+                    Enjoy cycling, mountain biking, and horseback riding nearby,
+                    or relax with fishing and swimming on-site. Perfect for both
+                    adventure and leisure.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="/about"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============= about Section starts here ======= -->
+    <section id="about" class="about px-4">
+      <div class="container">
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div class="about_text">
+              <div class="titlepage text-white">
+                <h2>About Our Guesthouse</h2>
+                <p>
+                  Located in Bronkhorstspruit, Gauteng, and just a short walk
+                  from Bronkhorstspruit Dam, Eagles View Kungwini offers a
+                  tranquil escape for families and couples. Our 7 comfortable
+                  units feature en-suite bathrooms, a shared kitchen, lounge,
+                  patio, and access to amenities like a pool, braai facilities,
+                  Wi-Fi, and secure parking. Enjoy nearby activities such as
+                  bird watching, fishing, cycling, and horseback riding. Whether
+                  you’re seeking relaxation or adventure, Eagles View Kungwini
+                  is your perfect getaway. Let us take care of your every need
+                  and make your stay truly unforgettable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about_img">
+              <figure>
+                <img src="assets/images/outdoor-1.png" alt="#" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= about Section ends here ======= -->
+    <!-- ============= gallery Section starts here ======= -->
+    <section class="gallery-section" id="rooms">
+      <div class="container px-4 py-5">
+        <h2 class="text-white">Room Gallery</h2>
+        <p class="mb-4">
+          Discover the elegance and comfort of our exclusive rooms.
+        </p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="assets/images/bedroom-1.png"
+                alt="Eaglesview bedroom-1"
+              />
+              <div class="overlay">peaceful Escapes</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/images/bedroom-2.png"
+                alt="Eaglesview bedroom-1"
+              />
+              <div class="overlay">Cozy Retreats</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/images/bedroom-3.png"
+                alt="Eaglesview bedroom-1"
+              />
+              <div class="overlay">Modern Comforts</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/images/bedroom-4.png"
+                alt="Eaglesview bedroom-1"
+              />
+              <div class="overlay">Luxury Living</div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/images/bedroom-5.png"
+                alt="Eaglesview bedroom-1"
+              />
+              <div class="overlay">Tranquility Redefined</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <svg
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1000 100"
+      >
+        <g fill="%23000000">
+          <path
+            opacity=".5"
+            d="M0 86.9V74.7l220.7-19.3L0 29.2V17.9l250 38-250 31z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M0 74.7v-8.8l145.2-12.7L0 36v-6.8l220.7 26.2L0 74.7z"
+          ></path>
+          <path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
+          <path opacity=".5" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
+          <path opacity=".75" d="M0 65.9V36l145.2 17.2L0 65.9z"></path>
+          <path
+            opacity=".5"
+            d="M750 55.9l250-38v12.3L779.3 56.4 1000 75.7v11.2l-250-31zM500 18L250 56l250 31 250-31zM279.3 56.3L500 30.2l220.7 26.2L500 75.7z"
+          ></path>
+          <path d="M500 17.9l-250 38-250-38v-18h1000v18l-250 38-250-38z"></path>
+          <path
+            d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z"
+            opacity=".5"
+          ></path>
+          <path
+            d="M500 30.2L279.3 56.4 500 75.7l220.7-19.3zM335.4 55.5L500 36l164.6 19.5L500 70z"
+            opacity=".5"
+          ></path>
+          <path
+            opacity=".5"
+            d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
+          ></path>
+          <path
+            opacity=".75"
+            d="M664.6 55.5L500 69.9 335.4 55.5 500 36l164.6 19.5z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"
+          ></path>
+          <path
+            opacity=".5"
+            d="M1000 30.2V36L854.9 53.2 1000 65.9v9.8L779.3 56.4 1000 30.2z"
+          ></path>
+          <path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
+          <path opacity=".5" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
+          <path opacity=".75" d="M1000 36v29.9L854.9 53.2 1000 36z"></path>
+        </g>
+      </svg>
+    </section>
+    <!-- ============= service Section ends here ======= -->
+    <!-- ============= Testimonial Section start here ======= -->
+    <section class="testimonials-section pb-2">
+      <div class="container px-4 py-5">
+        <h2 class="testimonials-title">
+          What Our <br /><span class="px-4 text-primary">Guests say</span>
+        </h2>
+        <p class="testimonials-subtitle">
+          Real reviews from our satisfied visitors.
+        </p>
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide testimonials-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                  <img
+                    src="assets/images/profile-placeholder.webp"
+                    alt="reviewer placeholder image"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  " Since Our arrival late Friday afternoon until our Departure
+                  on Sunday Morning We have been met with the utmost sincerety
+                  and the service we Receive from all staff"
+                </p>
+                <h4 class="testimonial-name">— Gerrit Malan</h4>
+                <span class="testimonial-role">Vacationer</span>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide testimonials-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                  <img
+                    src="assets/images/profile-placeholder.webp"
+                    alt="reviewer placeholder image"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  "It was a 40th birthday celebration and the venue was perfect
+                  for the occasion. Highly recomendable."
+                </p>
+                <h4 class="testimonial-name">— Willie Scholtz</h4>
+                <span class="testimonial-role">Vacationer</span>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide testimonials-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                  <img
+                    src="assets/images/profile-placeholder.webp"
+                    alt="reviewer placeholder image"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  "We enjoyed our stay at eagless View. Jared and Precious were
+                  very helpful and accommodating! We felt very welcome and taken
+                  care of."
+                </p>
+                <h4 class="testimonial-name">— Taren Govender</h4>
+                <span class="testimonial-role">Vacationer</span>
+              </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide testimonials-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-avatar">
+                  <img
+                    src="assets/images/profile-placeholder.webp"
+                    alt="reviewer placeholder image"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+                <p class="testimonial-text">
+                  "Newly remodeled book in advanced"
+                </p>
+                <h4 class="testimonial-name">— Fraser Vermaak</h4>
+                <span class="testimonial-role">Vacationer</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next testimonials-button-next"></div>
+          <div class="swiper-button-prev testimonials-button-prev"></div>
+          <div class="swiper-pagination testimonials-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= TestimonialSection ends here ======= -->
+    <%- include("../partials/_footer.ejs") %>
+  </body>
+</html>

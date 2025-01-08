@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Explore the gallery of Eagles View Kungwini with stunning views, rooms, and facilities. See our beautiful spaces and outdoor areas through captivating images."
+    />
+    <meta
+      name="keywords"
+      content=", gallery, luxury lodge, outdoor views, rooms, facilities, South Africa, photography"
+    />
+    <meta property="og:title" content="Gallery | Eagles View Kungwini" />
+    <meta
+      property="og:description"
+      content="View breathtaking images of Eagles View Kungwini's rooms, outdoor areas, and facilities. Experience our luxury lodge through beautiful photography."
+    />
+    <meta property="og:image" content="URL to image for social media sharing" />
+    <meta property="og:url" content="URL to your gallery page" />
+    <meta name="robots" content="index, follow" />
+    <%- include('../partials/_header.ejs') %>
+    <title>Gallery | Eagles View Kungwini</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Gallery | Eagles View Kungwini",
+        "description": "Explore the gallery of Eagles View Kungwini, showcasing stunning views, rooms, and facilities.",
+        "url": "https://yourwebsite.com/gallery",
+        "image": [
+          "https://yourwebsite.com/assets/images/outdoor-view.webp",
+          "https://yourwebsite.com/assets/images/bedroom-1.webp",
+          "https://yourwebsite.com/assets/images/braai-area.webp"
+        ],
+        "creator": {
+          "@type": "Organization",
+          "name": "Eagles View Kungwini"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include("../partials/_navbar.ejs") %>
+        <div
+          class="container-fluid page-header mb-5 p-0"
+          style="background-image: url(assets/images/bedroom-2.png)"
+        >
+          <div class="page-dim-bg"></div>
+          <div class="header_content text-white">
+            <h1>Explore Our Gallery</h1>
+            <p>A glimpse of your serene getaway.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Gallery us starts here -->
+    <section class="gallery-page-section section">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 section-title text-primary">Gallery</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons text-center mb-4">
+          <button class="btn btn-outline-primary filter-btn" data-filter="all">
+            All
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter="outdoor"
+          >
+            Outdoor
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter="rooms"
+          >
+            Rooms
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter="facilities"
+          >
+            Facilities
+          </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-3 gallery-grid">
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="rooms">
+            <img
+              src="assets/images/bedroom-1.webp"
+              class="img-fluid"
+              alt="Bedroom 1"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="outdoor">
+            <img
+              src="assets/images/outdoor-view.webp"
+              class="img-fluid"
+              alt="Outdoor View"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="outdoor">
+            <img
+              src="assets/images/outdoor-1.webp"
+              class="img-fluid"
+              alt="Outdoor View"
+            />
+          </div>
+          <div
+            class="col-sm-6 col-md-4 gallery-item"
+            data-category="facilities"
+          >
+            <img
+              src="assets/images/braai-area.webp"
+              class="img-fluid"
+              alt="Braai Area"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="outdoor">
+            <img
+              src="assets/images/outdoor-2.webp"
+              class="img-fluid"
+              alt="Outdoor View"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="outdoor">
+            <img
+              src="assets/images/outdoor-3.webp"
+              class="img-fluid"
+              alt="Outdoor View"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="outdoor">
+            <img
+              src="assets/images/outdoor-4.webp"
+              class="img-fluid"
+              alt="Outdoor View"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="outdoor">
+            <img
+              src="assets/images/outdoor-5.webp"
+              class="img-fluid"
+              alt="Outdoor View"
+            />
+          </div>
+          <div
+            class="col-sm-6 col-md-4 gallery-item"
+            data-category="facilities"
+          >
+            <img
+              src="assets/images/pool.webp"
+              class="img-fluid"
+              alt="Swimming pool"
+            />
+          </div>
+          <div
+            class="col-sm-6 col-md-4 gallery-item"
+            data-category="facilities"
+          >
+            <img
+              src="assets/images/fishing.webp"
+              class="img-fluid"
+              alt="fishing in Kungwini"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="rooms">
+            <img
+              src="assets/images/bedroom-2.webp"
+              class="img-fluid"
+              alt="Eagles View Kungwini Bedroom"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="rooms">
+            <img
+              src="assets/images/bedroom-3.webp"
+              class="img-fluid"
+              alt="Eagles View Kungwini Bedroom"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="rooms">
+            <img
+              src="assets/images/bedroom-4.webp"
+              class="img-fluid"
+              alt="Eagles View Kungwini Bedroom"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="rooms">
+            <img
+              src="assets/images/bedroom-5.webp"
+              class="img-fluid"
+              alt="eagles View Kungwini Bedroom"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 gallery-item" data-category="rooms">
+            <img
+              src="assets/images/bedroom-6.webp"
+              class="img-fluid"
+              alt="swimming pool"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Modal Structure -->
+      <div
+        class="modal fade"
+        id="galleryModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                id="modalImage"
+                src=""
+                alt="Gallery Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+              <button class="btn btn-primary prev-btn">Previous</button>
+              <button class="btn btn-primary next-btn">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery section ends here -->
+    <%- include('../partials/_footer.ejs') %>
+  </body>
+</html>

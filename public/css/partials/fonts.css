@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Title font", 'Courier New', Courier, monospace;
+  src: url("../assets/fonts/DM_Serif/DMSerifDisplay-Regular.ttf");
+  display: swap;
+}
+
+@font-face {
+  font-family: "Page font", sans-serif;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+  display: swap;
+}

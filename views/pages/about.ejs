@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="keywords"
+      content="lodge, Bronkhorstspruit, family-friendly getaway, luxury lodge, outdoor activities, accommodations"
+    />
+    <meta
+      name="description"
+      content="Learn about Eagles View Kungwini, a tranquil lodge in Bronkhorstspruit offering comfortable accommodations, exciting activities, and exceptional hospitality."
+    />
+    <%- include("../partials/_header.ejs") %>
+    <title>About | Eagles View Kungwini vision and mission</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.3.7.1.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Eagles View Kungwini",
+        "description": "Located in Bronkhorstspruit, Eagles View Kungwinis offers a tranquil escape with comfortable accommodations and exciting activities.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "21 Witkruis Arend St, Kungwini Country Estate",
+          "addressLocality": "Bronkhorstspruit",
+          "addressRegion": "Gauteng",
+          "postalCode": "1020",
+          "addressCountry": "ZA"
+        },
+        "telephone": "+27 834113931",
+        "email": "info@neaglesview.co.za",
+        "url": "https://example.com",
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "John Doe",
+            "jobTitle": "General Manager",
+            "sameAs": "https://www.linkedin.com/in/johndoe"
+          },
+          {
+            "@type": "Person",
+            "name": "Jane Smith",
+            "jobTitle": "Receptionist",
+            "sameAs": "https://www.linkedin.com/in/janesmith"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main-menu">
+        <%- include("../partials/_navbar.ejs") %>
+        <div
+          class="container-fluid page-header mb-5 p-0"
+          style="background-image: url(assets/images/outdoor-4.png)"
+        >
+          <div class="page-dim-bg"></div>
+          <div class="header_content text-white">
+            <h1>About Eagles View Kungwini</h1>
+            <p>Comfort and traquility in every detail</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About us starts here -->
+    <section class="page-about-section">
+      <div class="container px-4 pb-5">
+        <div class="about-inner-container">
+          <div class="about-toggle-container">
+            <h2 class="pb-1 text-white text-uppercase">About Us</h2>
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa fa-map-marker-alt"></i> Location
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                Located in Bronkhorstspruit, Gauteng, eagless View Kungwini is a
+                short walk from Bronkhorstspruit Dam, offering a tranquil
+                escape.
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa fa-bed"></i> Accommodation
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                Our 7 comfortable units feature en-suite bathrooms, a shared
+                kitchen, lounge, patio, and access to premium amenities.
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa fa-star"></i> Experience
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                From bird watching and fishing to cycling and horseback riding,
+                enjoy a perfect mix of relaxation and adventure.
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-header" onclick="toggleDescription(this)">
+                <i class="fa-solid fa-money-check-dollar"></i>Rates
+                <span class="arrow">&#x25BC;</span>
+              </div>
+              <div class="about-description">
+                Price range from R1 200 to R1 700
+              </div>
+            </div>
+          </div>
+          <div class="about-image-container">
+            <img
+              src="assets/images/outdoor-3.png"
+              alt="Eagles View Kungwini"
+              class="about-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Interactive Section with Toggles -->
+    <section class="values-section">
+      <div class="container px-4 py-5">
+        <div class="interactive-section">
+          <h2>Why Stay With Us?</h2>
+          <div class="interactive-toggle">
+            <div class="toggle-header">
+              Unmatched Comfort <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="toggle-body">
+              <p>
+                We provide rooms that are designed with ultimate comfort in
+                mind, ensuring you a restful stay. From soft bedding to peaceful
+                surroundings, comfort is guaranteed.
+              </p>
+            </div>
+          </div>
+          <div class="interactive-toggle">
+            <div class="toggle-header">
+              Convenient Location <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="toggle-body">
+              <p>
+                Our guesthouse is centrally located, close to attractions,
+                shops, and dining options. You’ll never be far from what you
+                need.
+              </p>
+            </div>
+          </div>
+          <div class="interactive-toggle">
+            <div class="toggle-header">
+              Exceptional Service <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="toggle-body">
+              <p>
+                Our team is dedicated to ensuring your stay is flawless. With
+                personalized services and attention to detail, we strive to
+                exceed your expectations.
+              </p>
+            </div>
+          </div>
+          <div class="interactive-toggle">
+            <div class="toggle-header">
+              Relaxing Atmosphere <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="toggle-body">
+              <p>
+                Enjoy the serene surroundings, peaceful gardens, and
+                breathtaking views. Our guesthouse is a sanctuary where you can
+                truly relax and recharge.
+              </p>
+            </div>
+          </div>
+          <div class="interactive-toggle">
+            <div class="toggle-header">
+              Eco-Friendly Practices <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="toggle-body">
+              <p>
+                We are committed to sustainable practices. From energy-efficient
+                lighting to water conservation, we make every effort to reduce
+                our environmental impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Amenities Section -->
+    <div class="amenities-section">
+      <h2>Our Amenities</h2>
+      <div class="amenities-list">
+        <div class="amenity">
+          <i class="bi bi-wifi"></i>
+          <h4>Free Wi-Fi</h4>
+          <p>
+            Stay connected with high-speed internet access throughout the
+            property.
+          </p>
+        </div>
+        <div class="amenity">
+          <i class="bi bi-cup-hot"></i>
+          <h4>Complimentary Breakfast</h4>
+          <p>
+            Enjoy a delicious breakfast made with local ingredients to kickstart
+            your day.
+          </p>
+        </div>
+        <div class="amenity">
+          <i class="bi bi-sun"></i>
+          <h4>Outdoor Activities</h4>
+          <p>
+            Explore nearby trails, visit local attractions, or relax in our
+            peaceful garden.
+          </p>
+        </div>
+        <div class="amenity">
+          <i class="bi bi-shower"></i>
+          <h4>Private Bathrooms</h4>
+          <p>
+            All rooms feature private en-suite bathrooms for your comfort and
+            privacy.
+          </p>
+        </div>
+      </div>
+    </div>
+    <%- include("../partials/_footer.ejs") %>
+    <script>
+      document.querySelectorAll(".toggle-header").forEach((item) => {
+        item.addEventListener("click", () => {
+          item.parentElement.classList.toggle("active");
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
