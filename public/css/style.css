@@ -339,6 +339,14 @@ img {
 #galleryModal {
   z-index: 100001;
 }
+
+.gallery-page-section .gallery-item img,
+#galleryModal .modal-body img {
+  height: 200px;  /* Set a fixed height */
+  object-fit: cover;  /* Ensures the image covers the box without distortion */
+  width: 100%;  /* Ensure the image fills the width of its container */
+}
+
 /* About us starts here */
 .about {
   background: url("../assets/images/about/about-4.jpg");
