@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const logo = document.getElementById("logo");
     if (window.innerWidth <= 991) {
       {
-        logo.src = "assets/images/logo-white-text.webp";
+        logo.src = "assets/images/logo/original.png";
       }
     }
 
     if (window.innerWidth >= 991) {
       if (window.scrollY >= 50) {
         navbar.classList.add("scrolled", "navbar-light");
-        logo.src = "assets/images/logo-black-text.webp";
+        logo.src = "assets/images/logo/black_on_white.png";
       } else {
         navbar.classList.remove("scrolled", "navbar-light");
-        logo.src = "assets/images/logo-white-text.webp";
+        logo.src = "assets/images/logo/original.png";
       }
     }
   });
