@@ -1,6 +1,101 @@
-<html>
-    <body>
-        <h2>New Admin Message</h2>
-        <p><%= message %></p> <!-- This will display the message passed from the form -->
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Update from Golden Field</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f5f7;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #222;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007BFF;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333;
+            white-space: pre-wrap; /* Ensures that line breaks and spaces are preserved */
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Important Update from Golden Field</h2>
+        <p>We hope this message finds you well. We are reaching out to provide you with an important update. Please read the details below:</p>
+
+        <div class="message">
+            <p><%= message %></p>
+        </div>
+
+        <p>If you have any questions or need more information, please feel free to contact us at any time.</p>
+
+        <a href="mailto:moruditech@gmail.com" class="cta-button">Contact Us</a>
+
+        <div class="footer">
+            <p>Thank you for your time, and we look forward to connecting with you.</p>
+            <p>Best regards,</p>
+            <p>The Golden Field Team</p>
+        </div>
+    </div>
+</body>
 </html>

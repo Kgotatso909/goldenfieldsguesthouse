@@ -6,57 +6,111 @@
   <title>Your Booking Confirmation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-    }
-    h2 {
+      background-color: #f4f5f7;
       color: #333;
     }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 26px;
+      color: #222;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
     .booking-details {
-      margin: 20px 0;
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
     }
-    .booking-details th, .booking-details td {
-      padding: 10px;
+
+    .booking-details th,
+    .booking-details td {
+      padding: 14px;
       text-align: left;
+      font-size: 16px;
     }
+
     .booking-details th {
       background-color: #28a745;
       color: #fff;
+      font-weight: 600;
     }
+
     .booking-details td {
-      border-bottom: 1px solid #ddd;
+      background-color: #f9f9f9;
+      color: #555;
+      border-bottom: 1px solid #eee;
     }
-    .footer {
-      font-size: 12px;
-      color: #888;
-      text-align: center;
-      margin-top: 20px;
+
+    .booking-details tr:last-child td {
+      border-bottom: none;
     }
+
+    .booking-details td:first-child {
+      font-weight: bold;
+      color: #333;
+    }
+
     .cta-button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 20px;
       background-color: #007BFF;
       color: white;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+
+    .footer a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Booking Confirmation</h2>
-    <p>Thank you for booking with us! Here are the details of your booking:</p>
+    <p>Thank you for booking with us! Below are the details of your booking:</p>
 
     <table class="booking-details">
       <tr>
@@ -100,7 +154,7 @@
     <div class="footer">
       <p>We look forward to hosting you!</p>
       <p>Best regards,</p>
-      <p>Your Eagles View Team</p>
+      <p>Your Golden Field Team</p>
     </div>
   </div>
 </body>

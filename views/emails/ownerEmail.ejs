@@ -4,13 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Contact Message</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f5f7;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .message-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007BFF;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            white-space: pre-wrap;
+        }
+
+        .info {
+            padding: 10px;
+            margin: 15px 0;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+        }
+
+        .info strong {
+            color: #007BFF;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>You have received a new contact message</h1>
-    <p><strong>Name:</strong> <%= name %></p>
-    <p><strong>Email:</strong> <%= email %></p>
-    <p><strong>Subject:</strong> <%= subject %></p>
-    <p><strong>Message:</strong></p>
-    <p><%= message %></p>
+    <div class="container">
+        <h1>You Have Received a New Contact Message</h1>
+        
+        <div class="info">
+            <p><strong>Name:</strong> <%= name %></p>
+            <p><strong>Email:</strong> <%= email %></p>
+            <p><strong>Subject:</strong> <%= subject %></p>
+        </div>
+        
+        <div class="message-box">
+            <p><strong>Message:</strong></p>
+            <p><%= message %></p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Action Required:</strong> Please review the message and respond accordingly.</p>
+            <p>If you need to get in touch with the sender, you can reply directly to this email.</p>
+            <p>Best regards,</p>
+            <p>The Golden Field Team</p>
+        </div>
+    </div>
 </body>
 </html>
